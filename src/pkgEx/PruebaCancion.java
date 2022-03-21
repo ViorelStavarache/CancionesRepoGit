@@ -30,21 +30,23 @@ public class PruebaCancion {
 		System.out.println(cancionClasico);
 		
 		Cancion primeraCancion = new Cancion("I Don't Like Mondays", "The Boomtown Rats", 390, true);
-		Cancion segundaCancion = new Cancion("Don’t Stop Believin’", "Journey", 320, false);
+		Cancion segundaCancion = new Cancion("Donï¿½t Stop Believinï¿½", "Journey", 320, false);
 		Cancion terceraCancion = new Cancion("Come Join The Murder", "The White Buffalo & The Forest Rangers", 420, false);
 
 		if (primeraCancion.reproducirCancion()) {
-			System.out.println(primeraCancion.getTitulo() + " está sonando");
+			System.out.println(primeraCancion.getTitulo() + " estï¿½ sonando");
 		}
 		if (primeraCancion.pararCancion()) {
 			System.out.println(primeraCancion.getTitulo() + " stop");
 		}
 		if (primeraCancion.MismaCancion(cancionClasico)) {
-			System.out.println("Parece que no son la misma canción");
+			System.out.println("Parece que no son la misma canciï¿½n");
 		}
 		
 		Cancion nueva = new Cancion("Baba O'riley", "The Who", 310, false);
-		Cancion[] canciones = { primeraCancion, segundaCancion, terceraCancion, nueva };
+		Cancion cuartaCancion = new Cancion("Moonlight In Vermont", "Ella Fitzgerald & Louis Armstrong", 220, false);
+		Cancion quintaCancion = new Cancion("A Wizards Dream - Sleeping Spell", "Peter Gundry", 687, false);
+		Cancion[] canciones = { primeraCancion, segundaCancion, terceraCancion, nueva, cuartaCancion, quintaCancion};
 		
 		mostrarCancionesyAutor(canciones);
 		mostrarCancionMasLarga(canciones);
@@ -62,7 +64,7 @@ public class PruebaCancion {
 	 * {@link Cancion#getTitulo()}
 	 */
 	private static void mostrarSiguienteCancion(Cancion miCancion, Cancion[] canciones) {
-		System.out.println("La canción que sonará después de " + miCancion.getTitulo() + " será "
+		System.out.println("La canciï¿½n que sonarï¿½ despuï¿½s de " + miCancion.getTitulo() + " serï¿½ "
 				+ Cancion.SiguienteCancion(canciones, miCancion.getTitulo()));
 	}
 
@@ -72,7 +74,7 @@ public class PruebaCancion {
 	 * @see Cancion#MayorDuracion(Cancion[])
 	 */
 	private static void mostrarCancionMasLarga(Cancion[] canciones) {
-		System.out.println("La canción más larga es: " + Cancion.MayorDuracion(canciones));
+		System.out.println("La canciï¿½n mï¿½s larga es: " + Cancion.MayorDuracion(canciones));
 	}
 
 	/**
@@ -82,7 +84,7 @@ public class PruebaCancion {
 	 */
 	private static void mostrarCancionesyAutor(Cancion[] canciones) {
 		for (int i = 0; i < canciones.length; i++) {
-			System.out.println("La canción es " + canciones[i].getTitulo() + " de " + canciones[i].getGrupo());
+			System.out.println("La canciï¿½n es " + canciones[i].getTitulo() + " de " + canciones[i].getGrupo());
 		}
 	}
 	
