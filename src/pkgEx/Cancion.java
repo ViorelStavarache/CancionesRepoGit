@@ -22,7 +22,7 @@ public class Cancion {
 	 * Este contructor sirve para crear el objeto cancion con valores default del creador del 
 	 * codigo
 	 */
-	Cancion() // Constructor sin parámetros
+	Cancion() // Constructor sin parï¿½metros
 	{
 		this.titulo = "";
 		this.duracion = 0;
@@ -34,7 +34,7 @@ public class Cancion {
 	 * @param titulo
 	 * @param duracion
 	 */
-	Cancion(String titulo, int duracion)// constructor con 2 parámetros
+	Cancion(String titulo, int duracion)// constructor con 2 parï¿½metros
 	{
 		this.titulo = titulo;
 		this.duracion = duracion;
@@ -48,7 +48,7 @@ public class Cancion {
 	 * @param duracion
 	 * @param sonando
 	 */
-	Cancion(String titulo, String grupo, int duracion, boolean sonando) // constructor con 4 parámetros
+	Cancion(String titulo, String grupo, int duracion, boolean sonando) // constructor con 4 parï¿½metros
 	{
 		this.titulo = titulo;
 		this.duracion = duracion;
@@ -80,7 +80,7 @@ public class Cancion {
 		}
 	}
 
-	// meter métodos get/set/toString()
+	// meter mï¿½todos get/set/toString()
 	public String getTitulo() {
 		return titulo;
 	}
@@ -175,8 +175,6 @@ public class Cancion {
 	 * puniendo el titulo, autor(grupo), duracion y si esta sonando
 	 */
 	@Override
-	public String toString() {
-		return "Cancion [titulo=" + titulo + ", autor=" + grupo + ", duracion=" + duracion + ", sonando=" + sonando
-				+ "]";
-	}
+	public String toString() { return "Datos de la canciÃ³n [titulo=" + titulo + ", autor=" +
+	grupo + ", duracion=" + duracion + ", sonando=" + sonando + "]";}
 }
